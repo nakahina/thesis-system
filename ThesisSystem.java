@@ -70,17 +70,17 @@ public void addThesis(){
     Scanner sc = new Scanner(System.in);
     String title;
     System.out.println();
-    System.out.println("Please enter a Thesis name: ");
+    System.out.println("Please enter a Thesis title: ");
     title = sc.next();
     titles.add(title);
     
     String author;
-    System.out.println("Please enter a Thesis ID: ");
+    System.out.println("Please enter the author: ");
     author = sc.next();
     authors.add(author);
     
     String date;
-    System.out.println("Please enter a Thesis email: ");
+    System.out.println("Please enter the issued date: ");
     date = sc.next();
     dates.add(date);
     
@@ -106,9 +106,9 @@ public void deleteThesis(){
     System.out.println();
         System.out.println("====================================");
         for (int i = 0; i < titles.size(); i++){
-        System.out.println((i + 1) + ": Thesis Name: " + titles.get(i) + "\n" +
-                           "   Thesis Id: " + authors.get(i) + "\n" +
-                           "   Thesis Email: " + dates.get(i) + "\n");
+        System.out.println((i + 1) + ": Thesis title: " + titles.get(i) + "\n" +
+                           "   Thesis author: " + authors.get(i) + "\n" +
+                           "   Issued date: " + dates.get(i) + "\n");
         }
         System.out.println("====================================");
     System.out.println("Please enter a number you want to delete: ");
